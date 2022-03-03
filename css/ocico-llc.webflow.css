@@ -1,0 +1,257 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.body {
+  background-color: #fffae6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 15vh 15vw 10vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.ocico-long-logo {
+  width: 24vw;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.heading-paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.heading-paragraph._1vh {
+  margin-bottom: 1vh;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.heading-paragraph._4vh {
+  margin-bottom: 4vh;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.spacer {
+  height: 5vh;
+}
+
+.spacer._5 {
+  height: 5vh;
+}
+
+.welcome-heading {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.grid {
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-3 {
+  width: 4vw;
+}
+
+.project-name {
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: -webkit-transform 333ms cubic-bezier(.455, .03, .515, .955);
+  transition: -webkit-transform 333ms cubic-bezier(.455, .03, .515, .955);
+  transition: transform 333ms cubic-bezier(.455, .03, .515, .955);
+  transition: transform 333ms cubic-bezier(.455, .03, .515, .955), -webkit-transform 333ms cubic-bezier(.455, .03, .515, .955);
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.div-block-2:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.paragraph._2 {
+  margin-bottom: 1vh;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.paragraph._3 {
+  margin-bottom: 4vh;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 991px) {
+  .grid {
+    width: 140%;
+  }
+
+  .image-3 {
+    width: 7vw;
+  }
+
+  .project-name {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    height: auto;
+  }
+
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    height: auto;
+    padding-top: 10vh;
+  }
+
+  .ocico-long-logo {
+    width: 50vw;
+  }
+
+  .welcome-heading {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .image-3 {
+    width: 15vw;
+  }
+
+  .project-name {
+    font-weight: 700;
+  }
+}
+
+#w-node-_29049d7b-ec77-b651-920a-89f3afe6c19c-880433e3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#w-node-_24d182cb-f9b3-d6e8-23c2-51db468b9e42-880433e3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#w-node-_261debce-687c-a682-fb2e-7f2ce2f56d23-880433e3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#w-node-cf2aa3c4-b6c5-ac0a-2917-bd59e04c5bba-880433e3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#w-node-_967b2538-f96a-ac42-7c13-96fba6b71083-880433e3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#w-node-_2e1f6b96-8c73-6318-054a-b18b875d5b9b-880433e3 {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-_24d182cb-f9b3-d6e8-23c2-51db468b9e42-880433e3 {
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+}
+
